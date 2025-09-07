@@ -1,6 +1,7 @@
 :root {
     --text-white: rgb(255, 255, 255);
     --text-red: rgb(188, 18, 18);
+    --border-grey:rgb(56, 56, 56);
 }
 
 * {
@@ -20,6 +21,11 @@
 }
 
 @font-face {
+    font-family: GilroyMedium;
+    src: url("../fonts/gilroy-medium.ttf");
+}
+
+@font-face {
     font-family: Cambria;
     src: url("../fonts/cambria-bold.ttf");
 }
@@ -27,6 +33,11 @@
 body {
     font-family: GilroyRegular, sans-serif;
     background-color: #000000;
+}
+
+ul, li, a {
+    list-style: none;
+    text-decoration: none;
 }
 
 .container {
@@ -63,7 +74,6 @@ body {
 }
 
 .menu__list {
-    list-style: none;
     display: flex;
     gap: 40px;
     justify-content: space-between;
@@ -71,7 +81,6 @@ body {
 }
 
 .menu__link {
-    text-decoration: none;
     font-size: 16px;
     color: var(--text-white);
 }
@@ -170,7 +179,7 @@ body {
     border-radius: 5px;
     border: none;
     background-image: -webkit-linear-gradient( 90deg, rgb(90,4,4) 0%, rgb(188,18,18) 100%);
-    padding: 25px 76px 27px 76px;
+    padding: 25px 76px 25px 76px;
     font-family: GilroyBold, sans-serif;
     font-size: 18px;
     color: var(--text-white);
@@ -264,4 +273,88 @@ body {
     font-size: 16px;
     color: var(--text-white);
     line-height: 1.438;
+}
+
+/* SERVICES SECTION */
+
+.services {
+    position: relative;
+}
+
+.services::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/third_texture.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.15;
+}
+
+.services__container {
+    padding: 96px 0;
+}
+
+.services__info {
+    text-align: center;
+    min-width: 575px;
+}
+
+.services__title {
+    font-family: Cambria, sans-serif;
+    font-size: 40px;
+    color: var(--text-white);
+    text-align: start;
+    margin-bottom: 60px;
+}
+
+.services__menu {
+    margin-bottom: 38px;
+}
+
+.nav__menu {
+    align-items: center;
+    gap: 40px;
+    display: flex;
+}
+
+.services__menu-item {
+    font-family: GilroyMedium, sans-serif;
+    font-size: 16px;
+    color: var(--text-white);
+}
+
+.services__price {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    font-family: GilroyBold, sans-serif;
+    font-size: 16px;
+    color: var(--text-white);
+    margin-top: 72px;
+    text-align: left;
+}
+
+.services__col {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.services__col.name {
+    padding-right: 30px;
+}
+
+.services__col.disc {
+    font-size: 14px;
+    color: var(--text-white);
+    border-left: 1px solid var(--border-grey);
+    border-right: 1px solid var(--border-grey);
+    padding-left: 37px;
+}
+
+.services__col.sum {
+    font-family: GilroyBold, sans-serif;
+    font-size: 16px;
+    color: var(--text-white);
 }
