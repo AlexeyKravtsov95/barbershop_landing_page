@@ -8,5 +8,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="animate.css" level="application" />
+    <orderEntry type="library" name="slick" level="application" />
+    <orderEntry type="library" name="slick-carousel" level="application" />
   </component>
 </module>

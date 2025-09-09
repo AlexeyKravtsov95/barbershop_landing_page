@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbershop</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom_slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
 <div class="texture__wrapper">
@@ -104,30 +108,30 @@
                 </nav>
                 <div class="services__price">
                     <ul class="services__col name" id="name_list">
-                        <li id="name_list1">Стрижка мужская</li>
-                        <li id="name_list2">Стрижка удлиненная</li>
-                        <li id="name_list3">Стрижка машинкой</li>
-                        <li id="name_list4">Стрижка детская</li>
-                        <li id="name_list5">Стрижка бороды</li>
+                        <li id="name_list_first">Стрижка мужская</li>
+                        <li id="name_list_second">Стрижка удлиненная</li>
+                        <li id="name_list_third">Стрижка машинкой</li>
+                        <li id="name_list_fourth">Стрижка детская</li>
+                        <li id="name_list_fifth">Стрижка бороды</li>
 
                     </ul>
                     <ul class="services__col disc" id="disc_list">
-                        <li id="disc_list1">Подбор стрижки, 2 мытья, укладка</li>
-                        <li id="disc_list2">Подбор стрижки, 2 мытья, укладка</li>
-                        <li id="disc_list3">Без ножниц</li>
-                        <li id="disc_list4">От 4 до 14 лет включительно,<br>
+                        <li id="disc_list_first">Подбор стрижки, 2 мытья, укладка</li>
+                        <li id="disc_list_second">Подбор стрижки, 2 мытья, укладка</li>
+                        <li id="disc_list_third">Без ножниц</li>
+                        <li id="disc_list_fourth">От 4 до 14 лет включительно,<br>
                             не удлиненная
                         </li>
-                        <li id="disc_list5">С распариванием и окантовкой<br>
+                        <li id="dis_list_fifth">С распариванием и окантовкой<br>
                             бритвой шаветт
                         </li>
                     </ul>
                     <ul class="services__col sum" id="sum_list">
-                        <li id="sum_list1">1400 руб.</li>
-                        <li id="sum_list2">2100 руб.</li>
-                        <li id="sum_list3">950 руб.</li>
-                        <li id="sum_list4">1100 руб.</li>
-                        <li id="sum_list5">950 руб.</li>
+                        <li id="sum_list_first">1400 руб.</li>
+                        <li id="sum_list_second">2100 руб.</li>
+                        <li id="sum_list_third">950 руб.</li>
+                        <li id="sum_list_fourth">1100 руб.</li>
+                        <li id="sum_list_fifth">950 руб.</li>
                     </ul>
                 </div>
             </div>
@@ -140,5 +144,104 @@
         </div>
     </div>
 </section>
+<section class="masters">
+    <div class="container masters__container">
+        <div class="masters__info">
+            <h2 class="masters__title">
+                Наши мастера
+            </h2>
+            <div class="masters__text">
+                Вот они, простые герои, несущие в мир стиль и безупречный внешний вид.
+                Команда Barber Club каждый день трудится над тем, чтобы создавать и поддерживать ваш индивидуальный стиль, подчеркивать характер и превращать недостатки в достоинства.
+            </div>
+        </div>
+        <div class="masters__sliders">
+            <div class="sliders__item">
+                <span class="sliders__item-text">Барбер Алексей</span>
+                <img src="images/barber_first.png" alt="First barber" class="sliders__item-img">
+                <a href="#" class="sliders__item-link">
+                    <span class="slider__item-order">Записаться</span>
+                    <img src="images/arrow_right.png" alt="Arrow" class="slider__item-arrow">
+                </a>
+            </div>
+            <div class="sliders__item">
+                <span class="sliders__item-text">Барбер Роман</span>
+                <img src="images/barber_second.png" alt="Second barber" class="sliders__item-img">
+                <a href="#" class="sliders__item-link">
+                    <span class="slider__item-order">Записаться</span>
+                    <img src="images/arrow_right.png" alt="Arrow" class="slider__item-arrow">
+                </a>
+            </div>
+            <div class="sliders__item">
+                <span class="sliders__item-text">Барбер Роман</span>
+                <img src="images/barber_second.png" alt="Second barber" class="sliders__item-img">
+                <a href="#" class="sliders__item-link">
+                    <span class="slider__item-order">Записаться</span>
+                    <img src="images/arrow_right.png" alt="Arrow" class="slider__item-arrow">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="discount">
+    <div class="container discount__container">
+        <div class="discount__info">
+            <h2 class="discount__title">
+                Дарим вам скидку
+            </h2>
+            <div class="discount__text">
+                <span class="discount__redtext">
+                    -15%
+                </span>
+                <span class="discount__maintext">
+                    Создайте деловой имидж, который достоин Вас!
+                    Получите скидку на ваш первый визит.
+                </span>
+            </div>
+            <div class="discount__action">
+                <button class="btn discount__button">Получить скидку</button>
+            </div>
+        </div>
+        <div class="discount__image">
+            <img src="images/discount_man.png" alt="Discount" class="discount__image-img">
+        </div>
+    </div>
+</section>
+<section class="socials">
+    <div class="container socials__container">
+        <div class="socials__info">
+            <h2 class="socials__title">
+                Подписывайтесь на наш Instagram
+            </h2>
+            <div class="socials__action">
+                <div class="instagram__info">
+                    <img src="images/instagram.png" alt="Instagram" class="socials__instagram-img">
+                    <p class="instagram__text">@Barber_club</p>
+                </div>
+                <button class="btn social_button">Перейти в профиль</button>
+            </div>
+        </div>
+        <div class="socials__slider">
+            <div class="socials__slider-item">
+                <img src="images/social_photo_1.png" alt="Photo1" class="socials__slider-img">
+            </div>
+            <div class="socials__slider-item">
+                <img src="images/social_photo_2.png" alt="Photo2" class="socials__slider-img">
+            </div>
+            <div class="socials__slider-item">
+                <img src="images/social_photo_3.png" alt="Photo3" class="socials__slider-img">
+            </div>
+            <div class="socials__slider-item">
+                <img src="images/social_photo_4.png" alt="Photo4" class="socials__slider-img">
+            </div>
+            <div class="socials__slider-item">
+                <img src="images/social_photo_5.png" alt="Photo5" class="socials__slider-img">
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
